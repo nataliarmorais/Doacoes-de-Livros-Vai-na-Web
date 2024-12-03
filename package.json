@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "vercel-build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
@@ -28,9 +29,7 @@
     "vite": "^6.0.1"
   },
   "engines": {
-  "node": "18.x",
-  "npm": "9.x"
-}
-
-
+    "node": "18.x",
+    "npm": "9.x"
+  }
 }
