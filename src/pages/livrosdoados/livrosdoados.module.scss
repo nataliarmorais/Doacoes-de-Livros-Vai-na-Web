@@ -1,0 +1,69 @@
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+  }
+  
+  
+  .livrosDoadosSection {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  
+  
+    h2 {
+        font-size: 32px;
+    }
+  }
+  
+  .containerCards {
+  width: 95%;
+  height: 60vh;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  
+  
+  
+  section {
+    border: solid 3px #005695;
+    border-radius: 20px;
+    width: 18%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  
+    img{
+      width: 150px;
+      height: auto;
+    }
+  
+  
+    div {
+        text-align: center;
+    }
+  }
+  }
+  
+  
+  /* Estilos Responsivos */
+  @media (max-width: 780px) {
+   
+    .containerCards {
+     
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+  
+        section {
+            width: 60%;
+           
+  
+           
+            }
+        }
+    }
+  
+  

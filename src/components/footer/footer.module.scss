@@ -1,0 +1,65 @@
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+  }
+
+.contatoslogoFooter {
+    background-color: #005695;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    padding: 0 30px;
+    
+
+    nav{
+        width: 20%; /* Ajustando a largura da nav para ocupar mais espaço */
+        display: flex;
+        justify-content:space-around; /* Espaço entre os ícones */
+        align-items: center;
+    }
+
+    img {
+            width: 100%;
+            height: auto; /* Garantindo que a altura e largura dos ícones sejam iguais */
+    }
+}
+
+.copyrightFooter {
+    background-color: #232020;
+    font-family: popIns, sans-serif;
+    height:10vh;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    color: #fff;
+
+}
+
+
+/* Estilos Responsivos */
+@media (max-width: 780px) {
+
+    .contatoslogoFooter {
+        flex-direction: column;
+        padding: 5px 0;    
+
+        nav {
+    
+            width: 60%;
+            height: auto;
+
+            img {
+                width: 35px;
+                height: auto;
+            }
+        }
+    }
+
+    .copyrightFooter {
+        height: auto;
+        padding: 10px;
+        font-size: 12px;
+    }
+}

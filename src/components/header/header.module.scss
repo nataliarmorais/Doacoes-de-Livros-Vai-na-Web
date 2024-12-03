@@ -1,0 +1,100 @@
+body {
+    font-family: 'Sua Fonte Preferida', sans-serif;
+}
+
+header {
+    background: linear-gradient(90deg, #001B2F 0%, #005695 100%);
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    height: 15vh;
+  
+}
+.logoHeader {
+ display: flex;
+  width: 20%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+img {
+    width: 20%;
+}
+h1 {
+    font-size: 20px;
+    color: #fff;
+}
+
+.navHeader {
+   
+    width: 30%;
+   
+    ul {
+        display:flex;
+        justify-content:space-around;
+        list-style: none;
+    }
+
+    .link {
+        color: #fff;
+        font-size: 20px;
+        text-decoration: none;
+
+    }
+}
+.barraDeBusca {
+    border: solid #fff;
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 5vh;
+    border-radius: 10px;
+    margin-right: 1%;
+
+    img{
+        width: 90%;
+    }
+
+    input {
+        background-color: transparent;
+        border: none;
+        width: 60%;
+        height: 5vh;
+
+        &::placeholder {
+            color: #fff;
+            font-size: 15px;
+        }
+    }
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 780px){
+    header {
+        flex-direction: column;
+       justify-content: space-evenly;
+
+    }
+    .logoHeader {
+        
+        width: 60%;
+    }
+    img{
+        width: 15%;
+    
+    }
+
+    .navHeader {
+       
+        width: 95%;
+    }
+    .barraDeBusca {
+        display:none;
+    } 
+}
