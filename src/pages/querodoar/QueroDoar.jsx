@@ -3,6 +3,11 @@ import axios from "axios";
 import s from "./querodoar.module.scss";
 import iconelivro from "../../assets/iconelivro.png";
 
+// 👉 Configura o endpoint da API (local ou online)
+const API_BASE_URL = import.meta.env.MODE === "development"
+  ? "http://127.0.0.1:5000" // local
+  : "https://doacoes-de-livros-vai-na-web.onrender.com";
+
 export default function QueroDoar() {
     const [titulo, setTitulo] = useState("");
     const [categoria, setCategoria] = useState("");
@@ -23,20 +28,20 @@ export default function QueroDoar() {
         };
 
         try {
-            const resposta = await axios.post("http://127.0.0.1:5000/doar", dadosPEnviar);
+            const resposta = await axios.post(`${API_BASE_URL}/doar`, dadosPEnviar);
 
             if (resposta.status === 201) {
-                alert("Livro cadastrado com sucesso!");
+                alert("📚 Livro cadastrado com sucesso!");
                 setTitulo("");
                 setCategoria("");
                 setAutor("");
                 setImage_url("");
             } else {
-                alert("Erro ao cadastrar o livro.");
+                alert("❗ Erro ao cadastrar o livro.");
             }
         } catch (erro) {
             console.error("Erro ao cadastrar o livro:", erro);
-            alert("Erro ao conectar com o servidor.");
+            alert("🚨 Erro ao conectar com o servidor.");
         }
     };
 
