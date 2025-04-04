@@ -5,7 +5,7 @@ import iconelivro from "../../assets/iconelivro.png";
 
 // 👉 Configura o endpoint da API (local ou online)
 const API_BASE_URL = import.meta.env.MODE === "development"
-  ? "http://127.0.0.1:5000" // local
+  ? "http://127.0.0.1:5001" // local
   : "https://doacoes-de-livros-vai-na-web.onrender.com";
 
 export default function QueroDoar() {

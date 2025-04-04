@@ -6,7 +6,8 @@ export default function LivrosDoados() {
   const [livros, setLivros] = useState([]);
 
   useEffect(() => {
-    axios.get("https://primeira-api-livros.onrender.com/livros")
+    axios.get("http://127.0.0.1:5001/livros")
+
 
       .then(response => {
         setLivros(response.data);
