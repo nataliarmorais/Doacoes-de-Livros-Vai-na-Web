@@ -7,9 +7,8 @@ export default function LivrosDoados() {
 
   useEffect(() => {
     axios.get("http://127.0.0.1:5001/livros")
-
-
       .then(response => {
+        console.log("📚 Livros recebidos do backend:", response.data); // log correto aqui
         setLivros(response.data);
       })
       .catch(error => {
